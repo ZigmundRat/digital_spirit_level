@@ -16,6 +16,7 @@
 
   Required Libraries
    * Jeff Rowberg's MPU6050 library: https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050
+   * Jeff Rowberg's I2Cdev library: https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/I2Cdev
    * Adafruit SSD1306 OLED library: https://github.com/adafruit/Adafruit_SSD1306
    * Adafruit GFX library: https://github.com/adafruit/Adafruit-GFX-Library
    * Adafruit font from GFX library: https://github.com/adafruit/Adafruit-GFX-Library/blob/master/Fonts/FreeMono9pt7b.h
@@ -197,7 +198,7 @@ void dispMenu(byte itemSelect) {
   display.setTextSize(1);
   display.println(F("   Normal"));
   display.println(F(" Precision"));
-  display.println(F(" Calbriate"));
+  display.println(F(" Calibrate"));
 
   if (itemSelect == 0) {
     display.drawRect(5, 2, 120, 17, SSD1306_WHITE); // Draw box around item 1
